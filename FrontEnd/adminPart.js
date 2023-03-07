@@ -191,7 +191,7 @@ if (localStorage.token === undefined) {
 
   deletePart();
 
-  /* Function reset dans Upload Img Form */
+  /* Function reset preview dans Upload Img Form */
 
   function reloadForm() {
     let ajoutCache1 = document.querySelector(".inputImg i");
@@ -240,20 +240,27 @@ if (localStorage.token === undefined) {
 
       const inputFile = document.querySelector('#form input[name="inputFile"]');
       if (inputFile.value === "") {
-        errorMsg();
+        document.querySelector(".error").style.display = "flex";
 
         inputFile.focus();
         return false;
+      }
+      if (inputFile.value !== "") {
+        document.querySelector(".error").style.display = "none";
       }
 
       const inputTitle = document.querySelector(
         '#form input[name="inputTitle"]'
       );
       if (inputTitle.value === "") {
-        errorMsg();
+        const errMsg = (document.querySelector(".error").style.display =
+          "flex");
 
         inputTitle.focus();
         return false;
+      }
+      if (inputTitle.value !== "") {
+        document.querySelector(".error").style.display = "none";
       }
 
       const image = document.getElementById("image");
@@ -287,6 +294,8 @@ if (localStorage.token === undefined) {
           importWorkModal();
           redirection();
 
+          document.querySelector("#form").reset();
+
           function redirection() {
             setTimeout(goBack, 500);
           }
@@ -300,13 +309,7 @@ if (localStorage.token === undefined) {
 
   uploadImg();
 
-  function errorMsg() {
-    let errMsg = document.querySelector(".error");
-
-    errMsg.innerText = "Veuillez renseingner tout les champs !";
-  }
-
-  /* Affiche le formaulaire dans la modal*/
+  /* Affiche le formulaire dans la modal*/
 
   const imgForm = function (e) {
     let addDivForm = document.querySelector(".img-gal-modal");
