@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-architecte-sophie-bluel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenClassrooms-Student-Center/Portfolio-architecte-sophie-bluel.git"
+  },
+  "keywords": [
+    "S0phie"
+  ],
+  "author": "Sophie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OpenClassrooms-Student-Center/Portfolio-architecte-sophie-bluel/issues"
+  },
+  "homepage": "https://leo-Msb.github.io/OC-P3.git",
+  "dependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
