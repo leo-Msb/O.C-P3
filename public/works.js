@@ -12,7 +12,7 @@ function importWorks() {
       const imagesData = data.map((images) => {
         return ` <figure>
                       <img data-category=${images.category.name} src=${images.imageUrl} alt="Abajour Tahina"
-crossorigin="" />
+crossorigin="anonymous" />
                       <figcaption>${images.title}</figcaption>
                    </figure>`;
       });
@@ -73,7 +73,7 @@ promise2
 
             const imagesData = imagesFiltrees.map((images) => {
               return ` <figure>
-                              <img src=${images.imageUrl} alt="Abajour Tahina" crossorigin="" />
+                              <img src=${images.imageUrl} alt="Abajour Tahina" crossorigin="anonymous" />
                               <figcaption>${images.title}</figcaption>
                           </figure>`;
             });
