@@ -18,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/OpenClassrooms-Student-Center/Portfolio-architecte-sophie-bluel/issues"
   },
-  "homepage": "https://leo-Msb.github.io/OC-P3.git",
   "dependencies": {
     "gh-pages": "^5.0.0"
   }
